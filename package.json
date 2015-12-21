@@ -1,0 +1,19 @@
+{
+  "name": "tgb-theme-skeleton",
+  "version": "0.1.0",
+  "description": "Esqueleto para desarrollo de tema web",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tonybolanyo/tgb-theme-skeleton.git"
+  },
+  "author": "Tony G. Bolaño <tonybolanyo@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tonybolanyo/tgb-theme-skeleton/issues"
+  },
+  "homepage": "https://github.com/tonybolanyo/tgb-theme-skeleton#readme"
+}
