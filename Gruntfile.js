@@ -129,6 +129,32 @@ module.exports = function(grunt) {
     }
   });
   
+  /* Desarrollo continuo: observando cambios */
+  grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.config('watch', {
+    scripts: {
+      files: ['src/scripts/**/*.coffee'],
+      tasks: ['coffee', 'concat:scripts', 'uglify'],
+      options: {
+        spawn: false
+      }
+    },
+    styles: {
+      files: ['src/styles/**/*.less'],
+      tasks: ['less', 'cssmin'],
+      options: {
+        spawn: false
+      }
+    },
+    jade: {
+      files: ['src/**/*.jade'],
+      tasks: ['jade'],
+      options: {
+        spawn: false
+      }
+    }
+  });
+  
   /* Tareas agrupadas */
   
   grunt.registerTask(
