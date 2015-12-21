@@ -1,0 +1,28 @@
+{
+  "name": "tgb-theme-skeleton",
+  "version": "0.1.0",
+  "authors": [
+    "Tony G. Bolaño <tonybolanyo@gmail.com>"
+  ],
+  "license": "ISC",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "bower_components",
+    "node_modules",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6",
+    "fontawesome": "~4.5.0",
+    "jquery": "~2.1.4"
+  },
+  "devDependencies": {
+    "holderjs": "~2.9.0"
+  },
+  "description": "Esqueleto para desarrollo de tema web",
+  "main": "",
+  "moduleType": [],
+  "homepage": "https://github.com/tonybolanyo/tgb-theme-skeleton"
+}
