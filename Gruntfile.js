@@ -155,12 +155,24 @@ module.exports = function(grunt) {
     }
   });
   
+  /* Desarrollo continuo: servidor web local */
+  grunt.loadNpmTasks('grunt-contrib-connect');
+  grunt.config('connect', {
+    server: {
+      options: {
+        port: 1337,
+        base: 'dist',
+        hostname: '*'
+      }
+    }
+  });
+  
   /* Tareas agrupadas */
   
   grunt.registerTask(
     'default', 
     'Compilación por defecto para desarrollo continuo', 
-    ['clean:build', 'jade', 'scripts', 'styles', 'copy', 'clean:temp']
+    ['clean:build', 'jade', 'scripts', 'styles', 'copy', 'clean:temp', 'connect', 'watch']
   );
   
   grunt.registerTask(

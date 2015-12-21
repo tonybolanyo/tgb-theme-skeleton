@@ -18,6 +18,7 @@ Las dependencias de desarrollo se gestionan con ``npm`` y las dependencias del f
 2. Instalar las dependencias npm
 3. Instalar las dependencias bower
 4. Compilar
+5. Arrancar el servidor y mostrar el resultado en el navegador http://localhost:1337
 
 ```bash
 git clone https://github.com/tonybolanyo/tgb-theme-skeleton.git mi-proyecto
@@ -25,9 +26,16 @@ cd mi-projecto
 npm install
 bower install
 grunt build
+grunt serve
 ```
 
 ## Modo de empleo
+
+Para el desarrollo continuo, basta con lanzar grunt. La tarea definida por defecto arranca el servidor interno en el puesto 1337 y vigila los cambios de los archivos jade, less y coffeescript.
+
+```bash
+grunt
+```
 
 ## Autores
 
